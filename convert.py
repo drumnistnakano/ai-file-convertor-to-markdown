@@ -127,7 +127,7 @@ async def convert_to_markdown(file_path: str, output_dir: str, preserve_structur
     try:
         # ファイルをMarkdownに変換
         logger.info(f"Converting {file_type.upper()} to Markdown: {file_path}")
-        result = await zerox(
+        await zerox(
             file_path=file_path,
             model=model,
             output_dir=target_dir,
