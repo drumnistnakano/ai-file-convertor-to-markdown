@@ -1,34 +1,77 @@
-# ai-file-convertor-to-markdown
+# AI OCR Markdown Convertor
 
-## セットアップ
+AI を活用してさまざまな形式のドキュメントを Markdown に変換するツール。
 
-事前に[poetry](https://python-poetry.org/docs/)をインストールしておくこと。
+## 特徴
 
-```
-poetry install
-poetry shell
-```
+- 複数のファイル形式をサポート（PDF、Word、Excel、など）
+- OpenAI の GPT-4 Vision モデルを使用
+- ドキュメントの構造を保持した Markdown 変換
+- 日本語を含む多言語対応
 
-.env に OpenAI で払い出したキーを設定する
+## インストール
 
-```
-OPENAI_API_KEY={キーを指定}
+### 必要条件
+
+- Node.js 20 以上
+- OpenAI API Key
+
+### インストール方法
+
+```bash
+# npmからインストール
+npm install -g ai-ocr-markdown-convertor
+
+# または、リポジトリからクローンして使用する場合
+git clone https://github.com/yourusername/ai-ocr-markdown-convertor.git
+cd ai-ocr-markdown-convertor
+npm install
+npm run build
+npm link
 ```
 
 ## 使用方法
 
-target ディレクトリに変換したいファイルを配置してください。
+### API キーの設定
+
+以下のいずれかの方法で OpenAI API キーを設定してください：
+
+1. 環境変数として設定
+
+```bash
+export OPENAI_API_KEY=your_api_key
+```
+
+2. プロジェクトルートに`.env`ファイルを作成
 
 ```
-python convert.py --input-dir target/{フォルダ名指定}
+OPENAI_API_KEY=your_api_key
 ```
 
-実行すると、data ディレクトリに変換後のファイルが保管されます。
+### コマンド実行
 
-## サポート
+```bash
+# 指定したディレクトリ内のファイルを変換
+ai-ocr-convert /path/to/input/directory
+```
 
-サポートしているファイル拡張子は以下
+変換されたファイルは、入力ディレクトリと同じ階層に日付付きのディレクトリ（例：`input_directory_20240317123456`）として出力されます。元のディレクトリ構造が保持されるため、例えば `/path/to/input/directory/folder1/document.pdf` は `/path/to/input_directory_20240317123456/folder1/document.md` として出力されます。
 
-- PDF: `.pdf`
-- Excel: `.xlsx`, `.xls`
-- Word: `.docx`, `.doc`
+## サポートされているファイル形式
+
+- PDF (`.pdf`)
+- Microsoft Word (`.doc`, `.docx`)
+- Microsoft Excel (`.xls`, `.xlsx`)
+- OpenDocument (`.odt`, `.ott`)
+- Rich Text Format (`.rtf`)
+- Plain Text (`.txt`)
+- HTML (`.html`, `.htm`)
+- XML (`.xml`)
+- CSV (`.csv`)
+- TSV (`.tsv`)
+- Microsoft PowerPoint (`.ppt`, `.pptx`)
+- OpenDocument Presentation (`.odp`, `.otp`)
+
+## ライセンス
+
+MIT
