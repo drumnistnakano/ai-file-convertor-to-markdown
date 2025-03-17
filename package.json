@@ -18,9 +18,12 @@
     "markdown",
     "converter",
     "document",
+    "pdf",
+    "excel",
+    "word",
+    "powerpoint",
     "openai",
-    "gpt-4",
-    "vision"
+    "gpt-4o"
   ],
   "author": "Yoshiyuki Nakano",
   "license": "MIT",
