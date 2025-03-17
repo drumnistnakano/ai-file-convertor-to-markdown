@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ai-file-convertor-to-markdown"
+version = "0.1.0"
+description = "file convertor to markdown"
+authors = ["drumnistnakano <30113636+drumnistnakano@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+py-zerox = "^0.0.7"
+aiohttp = "^3.10.0"
+asyncio = "^3.4.3"
+pathlib = "^1.0.1"
+python-dotenv = "^1.0.0"
+pytz = "^2025.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
