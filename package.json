@@ -1,5 +1,5 @@
 {
-  "name": "ai-ocr-markdown-convertor",
+  "name": "@drumnistnakano/ai-ocr-markdown-convertor",
   "version": "0.1.0",
   "description": "AI powered OCR and document conversion tool that converts various file formats to Markdown",
   "main": "dist/index.js",
@@ -10,7 +10,27 @@
     "build": "tsc",
     "start": "node dist/cli.js",
     "dev": "ts-node src/cli.ts",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "ocr",
+    "markdown",
+    "converter",
+    "document",
+    "openai",
+    "gpt-4",
+    "vision"
+  ],
+  "author": "Yoshiyuki Nakano",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drumnistnakano/ai-ocr-markdown-convertor.git"
+  },
+  "homepage": "https://github.com/drumnistnakano/ai-ocr-markdown-convertor",
+  "bugs": {
+    "url": "https://github.com/drumnistnakano/ai-ocr-markdown-convertor/issues"
   },
   "dependencies": {
     "chalk": "^4.1.2",

@@ -19,8 +19,11 @@ AI を活用してさまざまな形式のドキュメントを Markdown に変�
 ### インストール方法
 
 ```bash
-# npmからインストール
+# npmからグローバルにインストール
 npm install -g ai-ocr-markdown-convertor
+
+# または、スコープ付きパッケージの場合
+npm install -g @drumnistnakano/ai-ocr-markdown-convertor
 
 # または、リポジトリからクローンして使用する場合
 git clone https://github.com/yourusername/ai-ocr-markdown-convertor.git
