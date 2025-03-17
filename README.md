@@ -24,3 +24,11 @@ python convert.py --input-dir target/{フォルダ名指定}
 ```
 
 実行すると、data ディレクトリに変換後のファイルが保管されます。
+
+## サポート
+
+サポートしているファイル拡張子は以下
+
+- PDF: `.pdf`
+- Excel: `.xlsx`, `.xls`
+- Word: `.docx`, `.doc`
