@@ -58,7 +58,7 @@ OPENAI_API_KEY=your_api_key
 ai-ocr-convert /path/to/input/directory
 ```
 
-変換されたファイルは、入力ディレクトリと同じ階層に日付付きのディレクトリ（例：`input_directory_20240317123456`）として出力されます。元のディレクトリ構造が保持されるため、例えば `/path/to/input/directory/folder1/document.pdf` は `/path/to/input_directory_20240317123456/folder1/document.md` として出力されます。
+変換されたファイルは、入力ディレクトリと同じ階層に日付付きのディレクトリ（例：`input_directory_20240317123456`）として出力されます。元のディレクトリ構造が保持されるため、たとえば `/path/to/input/directory/folder1/document.pdf` は `/path/to/input_directory_20240317123456/folder1/document.md` として出力されます。
 
 ## サポートされているファイル形式
 
@@ -74,7 +74,3 @@ ai-ocr-convert /path/to/input/directory
 - TSV (`.tsv`)
 - Microsoft PowerPoint (`.ppt`, `.pptx`)
 - OpenDocument Presentation (`.odp`, `.otp`)
-
-## ライセンス
-
-MIT
